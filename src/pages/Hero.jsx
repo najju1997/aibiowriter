@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
+import heroimg from '../assets/heroimg.jpeg'
 
 export default function Hero() {
   return (
@@ -11,7 +12,7 @@ export default function Hero() {
               initial={{ opacity: 0, scale: 0.8 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 1, ease: "easeOut" }}
-              src="/src/assets/heroimg.jpeg" // Placeholder image URL
+              src={heroimg} // Placeholder image URL
               alt="Placeholder"
               className="w-full h-auto aspect-square object-cover rounded-md md:w-2/5 
               border-4 border-transparent bg-clip-border 
